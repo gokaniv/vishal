@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Clinical</title>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <script>
+    window.MathJax = {
+      tex: {
+        tags: 'ams'
+      }
+    };
+  </script>
+  <script type="text/javascript">
+    window.MathJax = {
+      tex: {
+        macros: {
+          Order: "{\\mathcal O}",
+          vec: ['\\boldsymbol{#1}', 1],
+          div: "{\\boldsymbol{\\nabla}\\cdot}",
+          grad: "{\\boldsymbol\\nabla}",
+          curl: "{\\boldsymbol\\nabla\\times}",
+          Laplacian: "{\\nabla^2}",
+          dAlambertian: "{\\Box^2}",
+          Order: "{\\mathcal O}",
+          T: "{^\\mathsf{T}}"
+        }
+      }
+    };
+  </script>
+  <style>
+    body {
+      margin: 20px;
+      background-color: #d7d7d7; /* death gray */
+      font-family: Arial;
+      height: 100%;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      line-height: 1.5;
+    }
+
+    .textbox {
+      background-color: rgba(255, 255, 255, 0.866);
+      border-radius: 10px;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      text-align: left;
+    }
+
+  </style>
+</head>
+<body>
+<div class="textbox">
+<h1>Clinical notes</h1>
+<ul>
+<li><a href="#book1">Book 1</a></li>
+<li><a href="#book2">Book 2</a></li>
+<li><a href="#book3">Book 3</a></li>
+</ul>	
+</div>
+
+<div class="textbox"><h2 id="book1">Book 1</h2>
+Evaluate the integral
+\[\int \sin^2  x dx \,. \]
+Recall \(\cos 2x = \cos^2 x - \sin^2 x\). Also note that \(\sin^2 x + \cos^2 x= 1\). Thus \(\cos 2x = 1- 2 \sin^2 x\). Solving for \(\sin^2 x\) gives
+\[\sin^2 x = \frac{1}{2} - \frac{1}{2}\cos 2x.\]
+Thus substituting this relation into the desired integral gives
+\begin{align*}
+\int \sin^2  x dx &= \int \bigg[\frac{1}{2} - \frac{1}{2}\cos 2x \bigg] dx\\
+&= \int \frac{1}{2} dx - \frac{1}{2}\int\cos 2x \, dx\\
+&= \frac{x}{2} - \frac{1}{4} \sin 2x + C\,.
+\end{align*}
+This result was confirmed using Mathematica. 
+ 
+
+</div>
+
+<div class="textbox"> <h2 id="book2">Book 2</h2>
+<p>Content</p>
+</div>
+
+<div class="textbox"><h2 id="book3">Book 3</h2>
+</div>
+
+<div class="textbox">
+<p style="font-size:11px">
+Vishal Gokani <br>
+<a href="mailto:gokaniv@gmail.com" target="_blank" rel="noopener noreferrer">gokaniv@gmail.com</a> | <a href="https://gokaniv.github.io/vishal/" target="_blank" rel="noopener noreferrer">homepage</a> <br>
+<a href="https://www.utsouthwestern.edu/" target="_blank" rel="noopener noreferrer">UT Southwestern Medical Center</a> | <a href="https://scottishriteforchildren.org/" target="_blank" rel="noopener noreferrer">Scottish Rite for Children</a> <br>
+</p>
+</div>
+
+</body>
+</html>
+
