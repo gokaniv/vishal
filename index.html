@@ -1,111 +1,104 @@
-
-  
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Vishal Gokani</title>
-   <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-  <script id="MathJax-script" async
-          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
-   </script>
-<script>
-window.MathJax = {
-  tex: {
-    tags: 'ams'
-  }
-};
-</script>
-<script type="text/javascript">
-window.MathJax = {
-  tex: {
-    macros: {
-      Order: "{\\mathcal O}",
-      vec: ['\\boldsymbol{#1}',1] ,
-      div: "{\\boldsymbol{\\nabla}\\cdot}",
-      grad: "{\\boldsymbol\\nabla}",
-      curl: "{\\boldsymbol\\nabla\\times}",
-      Laplacian: "{\\nabla^2}",
-      dAlambertian: "{\\Box^2}",
-      Order: "{\\mathcal O}",
-      T: "{^\\mathsf{T}}",
-      FTt: "{\\mathcal{F}_t}",
-      IFTt: "{\\mathcal{F}_t^{-1}}",
-      FTx: "{\\mathcal{F}_x}",
-      IFTx: "{\\mathcal{F}_x^{-1}}",      
-      FTr: "{\\mathcal{F}_\\rho}",
-      IFTr: "{\\mathcal{F}_\\rho^{-1}}",    
-      HT: "{\\mathcal{H}_\\rho}",
-      IHT: "{\\mathcal{H}_\\rho^{-1}}",  
-      FTxy: "{\\mathcal{F}_{xy}}",
-      IFTxy: "{\\mathcal{F}_{xy}^{-1}}",
-      rect: "{\\mathrm{\\,rect\\,}}",
-      tri: "{\\mathrm{\\,tri\\,}}",
-      circfn: "{\\mathrm{\\,circ\\,}}",
-      sinc: "{\\mathrm{\\,sinc\\,}}",
-      ex: "{\\hat{e}_x}",           
-      ey: "{\\hat{e}_y}",
-      ez: "{\\hat{e}_z}"
-    }
-  }
-};
-</script>	
+  <title>Vishal Gokani - Publications</title>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <script>
+    window.MathJax = {
+      tex: {
+        tags: 'ams',
+        macros: {
+          Order: "{\\mathcal O}",
+          vec: ['\\boldsymbol{#1}', 1],
+          div: "{\\boldsymbol{\\nabla}\\cdot}",
+          grad: "{\\boldsymbol\\nabla}",
+          curl: "{\\boldsymbol\\nabla\\times}",
+          Laplacian: "{\\nabla^2}",
+          dAlambertian: "{\\Box^2}",
+          T: "{^\\mathsf{T}}",
+          FTt: "{\\mathcal{F}_t}",
+          IFTt: "{\\mathcal{F}_t^{-1}}",
+          FTx: "{\\mathcal{F}_x}",
+          IFTx: "{\\mathcal{F}_x^{-1}}",
+          FTr: "{\\mathcal{F}_\\rho}",
+          IFTr: "{\\mathcal{F}_\\rho^{-1}}",
+          HT: "{\\mathcal{H}_\\rho}",
+          IHT: "{\\mathcal{H}_\\rho^{-1}}",
+          FTxy: "{\\mathcal{F}_{xy}}",
+          IFTxy: "{\\mathcal{F}_{xy}^{-1}}",
+          rect: "{\\mathrm{\\,rect\\,}}",
+          tri: "{\\mathrm{\\,tri\\,}}",
+          circfn: "{\\mathrm{\\,circ\\,}}",
+          sinc: "{\\mathrm{\\,sinc\\,}}",
+          ex: "{\\hat{e}_x}",
+          ey: "{\\hat{e}_y}",
+          ez: "{\\hat{e}_z}"
+        }
+      }
+    };
+  </script>
   <style>
     body {
-      margin: 0 auto;
+      margin: 0;
       padding: 40px;
-      line-height: 1.5;
-      max-width: 1000px; /* Adjust this value as needed */
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background-color: #f4f4f4;
+    }
+    h1, h2 {
+      color: #0056b3;
+      text-align: center;
     }
     h1 {
-      text-align: left;
-    }
-    #contact-info {
-      display: flex;
-      align-items: center;
+      font-size: 2.5em;
       margin-bottom: 20px;
     }
-    #contact-info img {
-      margin-right: 10px;
+    h2 {
+      font-size: 2em;
+      margin-bottom: 15px;
     }
-    #table-of-contents {
-      margin-bottom: 20px;
+    #publications {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     }
-    #table-of-contents ul {
+    #publications ul {
       list-style-type: none;
+      padding: 0;
     }
-    #table-of-contents ul li {
-      margin-bottom: 5px;
+    #publications ul li {
+      margin-bottom: 15px;
+      padding: 10px;
+      background: #f9f9f9;
+      border-left: 4px solid #0056b3;
+    }
+    #publications ul li:hover {
+      background: #eef;
     }
   </style>
 </head>
 <body>
   <h1>Vishal Gokani</h1>
-
-
-
-
-<section id="publications">
-<h2>Publications</h2>
-<ul>
-<li> Bai H., Storch J., Gokani V., Kibrik P., Chen J., Li K., Chang A., Kim J., Ting. (2023). The Prognostic Ability of Venous Clinical Severity Score in Iliac Vein Stent Placement. Journal of vascular surgery, 78(4), 92. </li>
-<li> Bai, H., Gokani V., Storch, J. B., Kibrik, P., Aziz, F., Sachdev, U., Fukaya, E., Ochoa Chaar, C. I., Obi, A. T., & Ting, W. (2023). A Comparison of Below-Knee versus Above-Knee Endovenous Ablation of Varicose Veins. Journal of vascular surgery: Venous and lymphatic disorders, S2213-333X(23)00332-3 </li>
-<li> Bai, H., Storch, J. B., Gokani V., Kibrik, P., Chen, J., & Ting, W. (2023). Identifying venous clinical severity score thresholds for Clinical-Etiology-Anatomy-Pathophysiology classifications of venous edema and higher. Vascular, 17085381231193510 </li>
-<li> Ma, C., Park, M. S., Alves do Monte, F., Gokani, V., Aruwajoye, O. O., Ren, Y., Liu, X., & Kim, H. K. W. (2023). Local BMP2 hydrogel therapy for robust bone regeneration in a porcine model of Legg-Calvé-Perthes disease. NPJ Regenerative medicine, 8(1), 50. </li>
-<li> Kim, H. K. W., Park, M. S., Alves do Monte, F., Gokani, V., Aruwajoye, O. O., & Ren, Y. (2021). Minimally Invasive Necrotic Bone Washing Improves Bone Healing After Femoral Head Ischemic Osteonecrosis: An Experimental Investigation in Immature Pigs. The Journal of bone and joint surgery. American volume, 103(13), 1193–1202. </li>
-<li> Andre, G., Boschetto, F., Gokani, V., Singhal, M., Jing, Y., Kim, H. K. W., & Ma, C. (2023). Ex vivo study of detergent-assisted intraosseous bone wash treatment of osteonecrosis. Journal of orthopaedic research: Official publication of the Orthopaedic Research Society, 41(7), 1482–1493. </li>
-<li> Ren, Y., Deng, Z., Gokani, V., Kutschke, M., Mitchell, T. W., Aruwajoye, O., Adapala, N. S., Kamiya, N., Abu-Amer, Y., & Kim, H. K. (2021). Anti-Interleukin-6 Therapy Decreases Hip Synovitis and Bone Resorption and Increases Bone Formation Following Ischemic Osteonecrosis of the Femoral Head. Journal of bone and mineral research: the official journal of the American Society for Bone and Mineral Research, 36(2), 357–368. </li>
-<li> Alves do Monte, F., Sung Park, M., Gokani, V., Singhal, M., Ma, C., Aruwajoye, O. O., Niese, B., Liu, X., & Kim, H. K. W. (2020). Development of a novel minimally invasive technique to washout necrotic bone marrow content from epiphyseal bone: A preliminary cadaveric bone study. Orthopaedics & traumatology, surgery & research: OTSR, 106(4), 709–715. </li>
-<li> Junco J., Liang S., Gokani V., Gant V., Munoz J., Mayle A., Park C., Lacorazza H., Goodell M., Rabin K. CRLF2 Overexpression Demonstrates Enhanced Leukemogenicity in Down Syndrome Hematopoietic Cells. Blood 2016; 128(22):2708. </li>
-</ul>
-</section>
-
-
-  
-
-
-
+  <section id="publications">
+    <h2>Publications</h2>
+    <ul>
+      <li>Bai H., Storch J., Gokani V., Kibrik P., Chen J., Li K., Chang A., Kim J., Ting. (2023). The Prognostic Ability of Venous Clinical Severity Score in Iliac Vein Stent Placement. <em>Journal of Vascular Surgery</em>, 78(4), 92.</li>
+      <li>Bai, H., Gokani V., Storch, J. B., Kibrik, P., Aziz, F., Sachdev, U., Fukaya, E., Ochoa Chaar, C. I., Obi, A. T., & Ting, W. (2023). A Comparison of Below-Knee versus Above-Knee Endovenous Ablation of Varicose Veins. <em>Journal of Vascular Surgery: Venous and Lymphatic Disorders</em>, S2213-333X(23)00332-3.</li>
+      <li>Bai, H., Storch, J. B., Gokani V., Kibrik, P., Chen, J., & Ting, W. (2023). Identifying Venous Clinical Severity Score Thresholds for Clinical-Etiology-Anatomy-Pathophysiology Classifications of Venous Edema and Higher. <em>Vascular</em>, 17085381231193510.</li>
+      <li>Ma, C., Park, M. S., Alves do Monte, F., Gokani, V., Aruwajoye, O. O., Ren, Y., Liu, X., & Kim, H. K. W. (2023). Local BMP2 Hydrogel Therapy for Robust Bone Regeneration in a Porcine Model of Legg-Calvé-Perthes Disease. <em>NPJ Regenerative Medicine</em>, 8(1), 50.</li>
+      <li>Kim, H. K. W., Park, M. S., Alves do Monte, F., Gokani, V., Aruwajoye, O. O., & Ren, Y. (2021). Minimally Invasive Necrotic Bone Washing Improves Bone Healing After Femoral Head Ischemic Osteonecrosis: An Experimental Investigation in Immature Pigs. <em>The Journal of Bone and Joint Surgery. American Volume</em>, 103(13), 1193–1202.</li>
+      <li>Andre, G., Boschetto, F., Gokani, V., Singhal, M., Jing, Y., Kim, H. K. W., & Ma, C. (2023). Ex Vivo Study of Detergent-Assisted Intraosseous Bone Wash Treatment of Osteonecrosis. <em>Journal of Orthopaedic Research: Official Publication of the Orthopaedic Research Society</em>, 41(7), 1482–1493.</li>
+      <li>Ren, Y., Deng, Z., Gokani, V., Kutschke, M., Mitchell, T. W., Aruwajoye, O., Adapala, N. S., Kamiya, N., Abu-Amer, Y., & Kim, H. K. (2021). Anti-Interleukin-6 Therapy Decreases Hip Synovitis and Bone Resorption and Increases Bone Formation Following Ischemic Osteonecrosis of the Femoral Head. <em>Journal of Bone and Mineral Research: The Official Journal of the American Society for Bone and Mineral Research</em>, 36(2), 357–368.</li>
+      <li>Alves do Monte, F., Sung Park, M., Gokani, V., Singhal, M., Ma, C., Aruwajoye, O. O., Niese, B., Liu, X., & Kim, H. K. W. (2020). Development of a Novel Minimally Invasive Technique to Washout Necrotic Bone Marrow Content from Epiphyseal Bone: A Preliminary Cadaveric Bone Study. <em>Orthopaedics & Traumatology, Surgery & Research: OTSR</em>, 106(4), 709–715.</li>
+      <li>Junco J., Liang S., Gokani V., Gant V., Munoz J., Mayle A., Park C., Lacorazza H., Goodell M., Rabin K. (2016). CRLF2 Overexpression Demonstrates Enhanced Leukemogenicity in Down Syndrome Hematopoietic Cells. <em>Blood</em>, 128(22):2708.</li>
+    </ul>
+  </section>
 </body>
 </html>
