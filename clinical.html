@@ -1,98 +1,92 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Clinical</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vishal Gokani</title>
   <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
   <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
   <script>
     window.MathJax = {
       tex: {
-        tags: 'ams'
-      }
-    };
-  </script>
-  <script type="text/javascript">
-    window.MathJax = {
-      tex: {
+        tags: 'ams',
         macros: {
           Order: "{\\mathcal O}",
-          vec: ['\\boldsymbol{#1}', 1],
+          vec: ['\\boldsymbol{#1}',1],
           div: "{\\boldsymbol{\\nabla}\\cdot}",
           grad: "{\\boldsymbol\\nabla}",
           curl: "{\\boldsymbol\\nabla\\times}",
           Laplacian: "{\\nabla^2}",
           dAlambertian: "{\\Box^2}",
           Order: "{\\mathcal O}",
-          T: "{^\\mathsf{T}}"
+          T: "{^\\mathsf{T}}",
+          FTt: "{\\mathcal{F}_t}",
+          IFTt: "{\\mathcal{F}_t^{-1}}",
+          FTx: "{\\mathcal{F}_x}",
+          IFTx: "{\\mathcal{F}_x^{-1}}",
+          FTr: "{\\mathcal{F}_\\rho}",
+          IFTr: "{\\mathcal{F}_\\rho^{-1}}",
+          HT: "{\\mathcal{H}_\\rho}",
+          IHT: "{\\mathcal{H}_\\rho^{-1}}",
+          FTxy: "{\\mathcal{F}_{xy}}",
+          IFTxy: "{\\mathcal{F}_{xy}^{-1}}",
+          rect: "{\\mathrm{\\,rect\\,}}",
+          tri: "{\\mathrm{\\,tri\\,}}",
+          circfn: "{\\mathrm{\\,circ\\,}}",
+          sinc: "{\\mathrm{\\,sinc\\,}}",
+          ex: "{\\hat{e}_x}",
+          ey: "{\\hat{e}_y}",
+          ez: "{\\hat{e}_z}"
         }
       }
     };
   </script>
   <style>
     body {
-      margin: 20px;
-      background-color: #d7d7d7; /* death gray */
-      font-family: Arial;
-      height: 100%;
-      background-repeat: no-repeat;
-      background-attachment: fixed;
-      line-height: 1.5;
-    }
-
-    .textbox {
-      background-color: rgba(255, 255, 255, 0.866);
-      border-radius: 10px;
+      margin: 0 auto;
       padding: 20px;
-      margin-bottom: 20px;
+      font-family: Arial, sans-serif;
+      font-size: 14px;
+      line-height: 1.5;
+      max-width: 800px;
+      color: #000;
+      background-color: #fff;
     }
-
     h1 {
       text-align: left;
+      font-size: 24px;
+      margin-bottom: 20px;
     }
-
+    h2 {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+    ul {
+      padding: 0;
+      list-style-type: disc;
+      margin-left: 20px;
+    }
+    li {
+      margin-bottom: 5px;
+    }
   </style>
 </head>
 <body>
-<div class="textbox">
-<h1>Clinical notes</h1>
-<ul>
-<li><a href="#book1">Book 1</a></li>
-<li><a href="#book2">Book 2</a></li>
-<li><a href="#book3">Book 3</a></li>
-</ul>	
-</div>
+  <h1>Vishal Gokani</h1>
 
-<div class="textbox"><h2 id="book1">Book 1</h2>
-Evaluate the integral
-\[\int \sin^2  x dx \,. \]
-Recall \(\cos 2x = \cos^2 x - \sin^2 x\). Also note that \(\sin^2 x + \cos^2 x= 1\). Thus \(\cos 2x = 1- 2 \sin^2 x\). Solving for \(\sin^2 x\) gives
-\[\sin^2 x = \frac{1}{2} - \frac{1}{2}\cos 2x.\]
-Thus substituting this relation into the desired integral gives
-\begin{align*}
-\int \sin^2  x dx &= \int \bigg[\frac{1}{2} - \frac{1}{2}\cos 2x \bigg] dx\\
-&= \int \frac{1}{2} dx - \frac{1}{2}\int\cos 2x \, dx\\
-&= \frac{x}{2} - \frac{1}{4} \sin 2x + C\,.
-\end{align*}
-This result was confirmed using Mathematica. 
- 
-
-</div>
-
-<div class="textbox"> <h2 id="book2">Book 2</h2>
-<p>Content</p>
-</div>
-
-<div class="textbox"><h2 id="book3">Book 3</h2>
-</div>
-
-<div class="textbox">
-<p style="font-size:11px">
-Vishal Gokani <br>
-<a href="mailto:gokaniv@gmail.com" target="_blank" rel="noopener noreferrer">gokaniv@gmail.com</a> | <a href="https://gokaniv.github.io/vishal/" target="_blank" rel="noopener noreferrer">homepage</a> <br>
-<a href="https://www.utsouthwestern.edu/" target="_blank" rel="noopener noreferrer">UT Southwestern Medical Center</a> | <a href="https://scottishriteforchildren.org/" target="_blank" rel="noopener noreferrer">Scottish Rite for Children</a> <br>
-</p>
-</div>
-
+  <section id="publications">
+    <h2>Publications</h2>
+    <ul>
+      <li>Bai H., Storch J., Gokani V., Kibrik P., Chen J., Li K., Chang A., Kim J., Ting. (2023). The Prognostic Ability of Venous Clinical Severity Score in Iliac Vein Stent Placement. Journal of Vascular Surgery, 78(4), 92.</li>
+      <li>Bai, H., Gokani V., Storch, J. B., Kibrik, P., Aziz, F., Sachdev, U., Fukaya, E., Ochoa Chaar, C. I., Obi, A. T., & Ting, W. (2023). A Comparison of Below-Knee versus Above-Knee Endovenous Ablation of Varicose Veins. Journal of Vascular Surgery: Venous and Lymphatic Disorders, S2213-333X(23)00332-3.</li>
+      <li>Bai, H., Storch, J. B., Gokani V., Kibrik, P., Chen, J., & Ting, W. (2023). Identifying Venous Clinical Severity Score Thresholds for Clinical-Etiology-Anatomy-Pathophysiology Classifications of Venous Edema and Higher. Vascular, 17085381231193510.</li>
+      <li>Ma, C., Park, M. S., Alves do Monte, F., Gokani, V., Aruwajoye, O. O., Ren, Y., Liu, X., & Kim, H. K. W. (2023). Local BMP2 Hydrogel Therapy for Robust Bone Regeneration in a Porcine Model of Legg-Calvé-Perthes Disease. NPJ Regenerative Medicine, 8(1), 50.</li>
+      <li>Kim, H. K. W., Park, M. S., Alves do Monte, F., Gokani, V., Aruwajoye, O. O., & Ren, Y. (2021). Minimally Invasive Necrotic Bone Washing Improves Bone Healing After Femoral Head Ischemic Osteonecrosis: An Experimental Investigation in Immature Pigs. The Journal of Bone and Joint Surgery. American Volume, 103(13), 1193–1202.</li>
+      <li>Andre, G., Boschetto, F., Gokani, V., Singhal, M., Jing, Y., Kim, H. K. W., & Ma, C. (2023). Ex Vivo Study of Detergent-Assisted Intraosseous Bone Wash Treatment of Osteonecrosis. Journal of Orthopaedic Research: Official Publication of the Orthopaedic Research Society, 41(7), 1482–1493.</li>
+      <li>Ren, Y., Deng, Z., Gokani, V., Kutschke, M., Mitchell, T. W., Aruwajoye, O., Adapala, N. S., Kamiya, N., Abu-Amer, Y., & Kim, H. K. (2021). Anti-Interleukin-6 Therapy Decreases Hip Synovitis and Bone Resorption and Increases Bone Formation Following Ischemic Osteonecrosis of the Femoral Head. Journal of Bone and Mineral Research: The Official Journal of the American Society for Bone and Mineral Research, 36(2), 357–368.</li>
+      <li>Alves do Monte, F., Sung Park, M., Gokani, V., Singhal, M., Ma, C., Aruwajoye, O. O., Niese, B., Liu, X., & Kim, H. K. W. (2020). Development of a Novel Minimally Invasive Technique to Washout Necrotic Bone Marrow Content from Epiphyseal Bone: A Preliminary Cadaveric Bone Study. Orthopaedics & Traumatology, Surgery & Research: OTSR, 106(4), 709–715.</li>
+      <li>Junco J., Liang S., Gokani V., Gant V., Munoz J., Mayle A., Park C., Lacorazza H., Goodell M., Rabin K. (2016). CRLF2 Overexpression Demonstrates Enhanced Leukemogenicity in Down Syndrome Hematopoietic Cells. Blood, 128(22):2708.</li>
+    </ul>
+  </section>
 </body>
 </html>
-
